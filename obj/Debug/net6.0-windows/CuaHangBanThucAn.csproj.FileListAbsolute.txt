@@ -1,0 +1,106 @@
+E:\CuaHangBanThucAn\CuaHangBanThucAn\obj\Debug\net6.0-windows\CuaHangBanThucAn.csproj.AssemblyReference.cache
+E:\CuaHangBanThucAn\CuaHangBanThucAn\obj\Debug\net6.0-windows\CuaHangBanThucAn.GUI.Login.resources
+E:\CuaHangBanThucAn\CuaHangBanThucAn\obj\Debug\net6.0-windows\CuaHangBanThucAn.csproj.GenerateResource.cache
+E:\CuaHangBanThucAn\CuaHangBanThucAn\obj\Debug\net6.0-windows\CuaHangBanThucAn.GeneratedMSBuildEditorConfig.editorconfig
+E:\CuaHangBanThucAn\CuaHangBanThucAn\obj\Debug\net6.0-windows\CuaHangBanThucAn.AssemblyInfoInputs.cache
+E:\CuaHangBanThucAn\CuaHangBanThucAn\obj\Debug\net6.0-windows\CuaHangBanThucAn.AssemblyInfo.cs
+E:\CuaHangBanThucAn\CuaHangBanThucAn\obj\Debug\net6.0-windows\CuaHangBanThucAn.csproj.CoreCompileInputs.cache
+E:\CuaHangBanThucAn\CuaHangBanThucAn\bin\Debug\net6.0-windows\CuaHangBanThucAn.exe
+E:\CuaHangBanThucAn\CuaHangBanThucAn\bin\Debug\net6.0-windows\CuaHangBanThucAn.deps.json
+E:\CuaHangBanThucAn\CuaHangBanThucAn\bin\Debug\net6.0-windows\CuaHangBanThucAn.runtimeconfig.json
+E:\CuaHangBanThucAn\CuaHangBanThucAn\bin\Debug\net6.0-windows\CuaHangBanThucAn.dll
+E:\CuaHangBanThucAn\CuaHangBanThucAn\bin\Debug\net6.0-windows\CuaHangBanThucAn.pdb
+E:\CuaHangBanThucAn\CuaHangBanThucAn\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+E:\CuaHangBanThucAn\CuaHangBanThucAn\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+E:\CuaHangBanThucAn\CuaHangBanThucAn\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+E:\CuaHangBanThucAn\CuaHangBanThucAn\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+E:\CuaHangBanThucAn\CuaHangBanThucAn\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\CuaHangBanThucAn\CuaHangBanThucAn\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\CuaHangBanThucAn\CuaHangBanThucAn\obj\Debug\net6.0-windows\CuaHangBanThucAn.csproj.CopyComplete
+E:\CuaHangBanThucAn\CuaHangBanThucAn\obj\Debug\net6.0-windows\CuaHangBanThucAn.dll
+E:\CuaHangBanThucAn\CuaHangBanThucAn\obj\Debug\net6.0-windows\refint\CuaHangBanThucAn.dll
+E:\CuaHangBanThucAn\CuaHangBanThucAn\obj\Debug\net6.0-windows\CuaHangBanThucAn.pdb
+E:\CuaHangBanThucAn\CuaHangBanThucAn\obj\Debug\net6.0-windows\CuaHangBanThucAn.genruntimeconfig.cache
+E:\CuaHangBanThucAn\CuaHangBanThucAn\obj\Debug\net6.0-windows\ref\CuaHangBanThucAn.dll
+E:\CuaHangBanThucAn\CuaHangBanThucAn\obj\Debug\net6.0-windows\CuaHangBanThucAn.GUI.Home.resources
+E:\CuaHangBanThucAn\CuaHangBanThucAn\obj\Debug\net6.0-windows\CuaHangBanThucAn.GUI.UCFood.resources
+E:\CuaHangBanThucAn\CuaHangBanThucAn\obj\Debug\net6.0-windows\CuaHangBanThucAn.GUI.UCHome.resources
+E:\CuaHangBanThucAn\CuaHangBanThucAn\obj\Debug\net6.0-windows\CuaHangBanThucAn.GUI.ChangePassword.resources
+E:\CuaHangBanThucAn\CuaHangBanThucAn\obj\Debug\net6.0-windows\CuaHangBanThucAn.GUI.UCAccount.resources
+E:\CuaHangBanThucAn\CuaHangBanThucAn\obj\Debug\net6.0-windows\CuaHangBanThucAn.GUI.UCBill.resources
+E:\CuaHangBanThucAn\CuaHangBanThucAn\obj\Debug\net6.0-windows\CuaHangBanThucAn.GUI.UCCategory.resources
+E:\CuaHangBanThucAn\CuaHangBanThucAn\obj\Debug\net6.0-windows\CuaHangBanThucAn.GUI.UCSell.resources
+E:\CuaHangBanThucAn\CuaHangBanThucAn\obj\Debug\net6.0-windows\CuaHangBanThucAn.GUI.UCStatistical.resources
+E:\CuaHangBanThucAn\CuaHangBanThucAn\bin\Debug\net6.0-windows\itextsharp.dll
+E:\CuaHangBanThucAn\CuaHangBanThucAn\bin\Debug\net6.0-windows\LiveCharts.dll
+E:\CuaHangBanThucAn\CuaHangBanThucAn\bin\Debug\net6.0-windows\LiveCharts.WinForms.dll
+E:\CuaHangBanThucAn\CuaHangBanThucAn\bin\Debug\net6.0-windows\LiveCharts.Wpf.dll
+D:\Kiểm thử phần mềm\CuaHangBanThucAn-main\bin\Debug\net6.0-windows\CuaHangBanThucAn.exe
+D:\Kiểm thử phần mềm\CuaHangBanThucAn-main\bin\Debug\net6.0-windows\CuaHangBanThucAn.deps.json
+D:\Kiểm thử phần mềm\CuaHangBanThucAn-main\bin\Debug\net6.0-windows\CuaHangBanThucAn.runtimeconfig.json
+D:\Kiểm thử phần mềm\CuaHangBanThucAn-main\bin\Debug\net6.0-windows\CuaHangBanThucAn.dll
+D:\Kiểm thử phần mềm\CuaHangBanThucAn-main\bin\Debug\net6.0-windows\CuaHangBanThucAn.pdb
+D:\Kiểm thử phần mềm\CuaHangBanThucAn-main\bin\Debug\net6.0-windows\itextsharp.dll
+D:\Kiểm thử phần mềm\CuaHangBanThucAn-main\bin\Debug\net6.0-windows\LiveCharts.dll
+D:\Kiểm thử phần mềm\CuaHangBanThucAn-main\bin\Debug\net6.0-windows\LiveCharts.WinForms.dll
+D:\Kiểm thử phần mềm\CuaHangBanThucAn-main\bin\Debug\net6.0-windows\LiveCharts.Wpf.dll
+D:\Kiểm thử phần mềm\CuaHangBanThucAn-main\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+D:\Kiểm thử phần mềm\CuaHangBanThucAn-main\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+D:\Kiểm thử phần mềm\CuaHangBanThucAn-main\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+D:\Kiểm thử phần mềm\CuaHangBanThucAn-main\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+D:\Kiểm thử phần mềm\CuaHangBanThucAn-main\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Kiểm thử phần mềm\CuaHangBanThucAn-main\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Kiểm thử phần mềm\CuaHangBanThucAn-main\obj\Debug\net6.0-windows\CuaHangBanThucAn.csproj.AssemblyReference.cache
+D:\Kiểm thử phần mềm\CuaHangBanThucAn-main\obj\Debug\net6.0-windows\CuaHangBanThucAn.GeneratedMSBuildEditorConfig.editorconfig
+D:\Kiểm thử phần mềm\CuaHangBanThucAn-main\obj\Debug\net6.0-windows\CuaHangBanThucAn.AssemblyInfoInputs.cache
+D:\Kiểm thử phần mềm\CuaHangBanThucAn-main\obj\Debug\net6.0-windows\CuaHangBanThucAn.AssemblyInfo.cs
+D:\Kiểm thử phần mềm\CuaHangBanThucAn-main\obj\Debug\net6.0-windows\CuaHangBanThucAn.csproj.CoreCompileInputs.cache
+D:\Kiểm thử phần mềm\CuaHangBanThucAn-main\obj\Debug\net6.0-windows\CuaHangBanThucAn.csproj.CopyComplete
+D:\Kiểm thử phần mềm\CuaHangBanThucAn-main\obj\Debug\net6.0-windows\CuaHangBanThucAn.dll
+D:\Kiểm thử phần mềm\CuaHangBanThucAn-main\obj\Debug\net6.0-windows\refint\CuaHangBanThucAn.dll
+D:\Kiểm thử phần mềm\CuaHangBanThucAn-main\obj\Debug\net6.0-windows\CuaHangBanThucAn.pdb
+D:\Kiểm thử phần mềm\CuaHangBanThucAn-main\obj\Debug\net6.0-windows\CuaHangBanThucAn.genruntimeconfig.cache
+D:\Kiểm thử phần mềm\CuaHangBanThucAn-main\obj\Debug\net6.0-windows\ref\CuaHangBanThucAn.dll
+D:\Kiểm thử phần mềm\CuaHangBanThucAn-main\obj\Debug\net6.0-windows\CuaHangBanThucAn.GUI.LoginForm.resources
+D:\Kiểm thử phần mềm\CuaHangBanThucAn-main\obj\Debug\net6.0-windows\CuaHangBanThucAn.csproj.GenerateResource.cache
+D:\Kiểm thử phần mềm\CuaHangBanThucAn-main\obj\Debug\net6.0-windows\CuaHangBanThucAn.GUI.HomeForm.resources
+D:\Testing\CuaHangBanThucAn-main\bin\Debug\net6.0-windows\CuaHangBanThucAn.exe
+D:\Testing\CuaHangBanThucAn-main\bin\Debug\net6.0-windows\CuaHangBanThucAn.deps.json
+D:\Testing\CuaHangBanThucAn-main\bin\Debug\net6.0-windows\CuaHangBanThucAn.runtimeconfig.json
+D:\Testing\CuaHangBanThucAn-main\bin\Debug\net6.0-windows\CuaHangBanThucAn.dll
+D:\Testing\CuaHangBanThucAn-main\bin\Debug\net6.0-windows\CuaHangBanThucAn.pdb
+D:\Testing\CuaHangBanThucAn-main\bin\Debug\net6.0-windows\AWSSDK.Core.dll
+D:\Testing\CuaHangBanThucAn-main\bin\Debug\net6.0-windows\AWSSDK.DynamoDBv2.dll
+D:\Testing\CuaHangBanThucAn-main\bin\Debug\net6.0-windows\itextsharp.dll
+D:\Testing\CuaHangBanThucAn-main\bin\Debug\net6.0-windows\LiveCharts.dll
+D:\Testing\CuaHangBanThucAn-main\bin\Debug\net6.0-windows\LiveCharts.WinForms.dll
+D:\Testing\CuaHangBanThucAn-main\bin\Debug\net6.0-windows\LiveCharts.Wpf.dll
+D:\Testing\CuaHangBanThucAn-main\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+D:\Testing\CuaHangBanThucAn-main\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+D:\Testing\CuaHangBanThucAn-main\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+D:\Testing\CuaHangBanThucAn-main\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+D:\Testing\CuaHangBanThucAn-main\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Testing\CuaHangBanThucAn-main\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Testing\CuaHangBanThucAn-main\obj\Debug\net6.0-windows\CuaHangBanThucAn.csproj.AssemblyReference.cache
+D:\Testing\CuaHangBanThucAn-main\obj\Debug\net6.0-windows\CuaHangBanThucAn.GUI.AccountManager.UCAccount.resources
+D:\Testing\CuaHangBanThucAn-main\obj\Debug\net6.0-windows\CuaHangBanThucAn.GUI.AccountManager.UCRole.resources
+D:\Testing\CuaHangBanThucAn-main\obj\Debug\net6.0-windows\CuaHangBanThucAn.GUI.Food.UCFood.resources
+D:\Testing\CuaHangBanThucAn-main\obj\Debug\net6.0-windows\CuaHangBanThucAn.GUI.Food.UCTypeProduct.resources
+D:\Testing\CuaHangBanThucAn-main\obj\Debug\net6.0-windows\CuaHangBanThucAn.GUI.HomeForm.resources
+D:\Testing\CuaHangBanThucAn-main\obj\Debug\net6.0-windows\CuaHangBanThucAn.GUI.LoginForm.resources
+D:\Testing\CuaHangBanThucAn-main\obj\Debug\net6.0-windows\CuaHangBanThucAn.GUI.Sale.UCBill.resources
+D:\Testing\CuaHangBanThucAn-main\obj\Debug\net6.0-windows\CuaHangBanThucAn.GUI.Sale.UCSell.resources
+D:\Testing\CuaHangBanThucAn-main\obj\Debug\net6.0-windows\CuaHangBanThucAn.GUI.UCHome.resources
+D:\Testing\CuaHangBanThucAn-main\obj\Debug\net6.0-windows\CuaHangBanThucAn.csproj.GenerateResource.cache
+D:\Testing\CuaHangBanThucAn-main\obj\Debug\net6.0-windows\CuaHangBanThucAn.GeneratedMSBuildEditorConfig.editorconfig
+D:\Testing\CuaHangBanThucAn-main\obj\Debug\net6.0-windows\CuaHangBanThucAn.AssemblyInfoInputs.cache
+D:\Testing\CuaHangBanThucAn-main\obj\Debug\net6.0-windows\CuaHangBanThucAn.AssemblyInfo.cs
+D:\Testing\CuaHangBanThucAn-main\obj\Debug\net6.0-windows\CuaHangBanThucAn.csproj.CoreCompileInputs.cache
+D:\Testing\CuaHangBanThucAn-main\obj\Debug\net6.0-windows\CuaHangBanThucAn.csproj.CopyComplete
+D:\Testing\CuaHangBanThucAn-main\obj\Debug\net6.0-windows\CuaHangBanThucAn.dll
+D:\Testing\CuaHangBanThucAn-main\obj\Debug\net6.0-windows\refint\CuaHangBanThucAn.dll
+D:\Testing\CuaHangBanThucAn-main\obj\Debug\net6.0-windows\CuaHangBanThucAn.pdb
+D:\Testing\CuaHangBanThucAn-main\obj\Debug\net6.0-windows\CuaHangBanThucAn.genruntimeconfig.cache
+D:\Testing\CuaHangBanThucAn-main\obj\Debug\net6.0-windows\ref\CuaHangBanThucAn.dll
+D:\Testing\CuaHangBanThucAn-main\obj\Debug\net6.0-windows\CuaHangBanThucAn.GUI.Sale.UCRevenue.resources
+D:\Testing\CuaHangBanThucAn-main\obj\Debug\net6.0-windows\CuaHangBanThucAn.GUI.Sale.ChangePassword.resources

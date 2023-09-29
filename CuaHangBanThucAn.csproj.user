@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="GUI\AccountManager\UCAccount.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="GUI\AccountManager\UCRole.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="GUI\Food\UCFood.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="GUI\Food\UCTypeProduct.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="GUI\HomeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\Sale\ChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GUI\Sale\UCBill.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="GUI\Sale\UCRevenue.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="GUI\Sale\UCSell.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="GUI\UCHome.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
