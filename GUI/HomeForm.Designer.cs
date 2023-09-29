@@ -52,6 +52,7 @@
             lbName = new Label();
             lbRole = new Label();
             panel_menu = new Panel();
+            label1 = new Label();
             panel_content.SuspendLayout();
             flowLayoutPanel1.SuspendLayout();
             panel_menu.SuspendLayout();
@@ -289,6 +290,7 @@
             // panel_menu
             // 
             panel_menu.BackColor = SystemColors.ActiveCaption;
+            panel_menu.Controls.Add(label1);
             panel_menu.Controls.Add(lbRole);
             panel_menu.Controls.Add(lbName);
             panel_menu.Controls.Add(btnMyAccount);
@@ -300,6 +302,15 @@
             panel_menu.Name = "panel_menu";
             panel_menu.Size = new Size(250, 853);
             panel_menu.TabIndex = 0;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(26, 813);
+            label1.Name = "label1";
+            label1.Size = new Size(144, 20);
+            label1.TabIndex = 8;
+            label1.Text = "Version 0.9 by Higan";
             // 
             // HomeForm
             // 
@@ -345,5 +356,6 @@
         private Sale.UCSell ucSell1;
         private Sale.UCBill ucBill1;
         private Sale.UCRevenue ucRevenue1;
+        private Label label1;
     }
 }
