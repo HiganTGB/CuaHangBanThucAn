@@ -24,6 +24,8 @@ namespace CuaHangBanThucAn.GUI.Sale
         {
             InitializeComponent();
             init();
+            lvBill.ReadOnly = true;
+            lvProduct.ReadOnly = true;
         }
         private void init()
         {
