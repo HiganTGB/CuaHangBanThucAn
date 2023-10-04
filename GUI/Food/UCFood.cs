@@ -20,6 +20,12 @@ namespace CuaHangBanThucAn.GUI.Food
                 groupDetail.Enabled = false;
                 tabMenu.SelectedIndex = 1;
                 tabMenu.TabPages["tabPage1"].Enabled = false;
+            }
+            if(LoginBLL.UserLogin.role.permission == "ADMIN")
+            {
+                groupDetail.Enabled = true;
+                tabMenu.SelectedIndex = 0;
+                tabMenu.TabPages["tabPage1"].Enabled = true;
             }    
         }
         private void show(int id)
