@@ -45,7 +45,10 @@ namespace CuaHangBanThucAn.BLL
 
         public void Delete(int id)
         {
-
+            if(id == LoginBLL.UserLogin.id)
+            {
+                throw new AppException(1, "Không được xoá chính bản thân");
+            }
             accountDAO.Delete(id);
         }
 

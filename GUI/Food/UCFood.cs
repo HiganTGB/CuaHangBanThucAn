@@ -106,6 +106,7 @@ namespace CuaHangBanThucAn.GUI.Food
                 Product temp = new Product(-1, txtName.Text, (TypeProduct)cbType.SelectedItem, long.Parse(txtPrice.Text), float.Parse(txtDiscount.Text), int.Parse(txtStock.Text), false);
                 productBLL.Create(temp);
                 MessageBox.Show("Thêm thành công", "Thông báo", MessageBoxButtons.OK);
+                refresh();
             }
             catch (AppException ex)
             {
@@ -159,6 +160,7 @@ namespace CuaHangBanThucAn.GUI.Food
                     temp.typeProduct = (TypeProduct)cbDType.SelectedItem;
                     productBLL.Update(temp);
                     MessageBox.Show("Thay đổi thành công", "Thông báo", MessageBoxButtons.OK);
+                    refresh();
                 }
                
             }
@@ -183,6 +185,7 @@ namespace CuaHangBanThucAn.GUI.Food
                     ProductBLL productBLL = new ProductBLL();
                     productBLL.Delete(int.Parse(txtDID.Text));
                     MessageBox.Show("Xoá thành công", "Thông báo", MessageBoxButtons.OK);
+                    refresh();
                 }
             }
             catch (AppException ex)
@@ -217,8 +220,6 @@ namespace CuaHangBanThucAn.GUI.Food
         {
             try
             {
-                ProductBLL productBLL = new ProductBLL();
-                showlist(productBLL.SearchAll());
                 refresh();
             }
             catch (AppException ex)

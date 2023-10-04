@@ -85,6 +85,7 @@ namespace CuaHangBanThucAn.GUI.AccountManager
                 RoleBLL roleBLL = new RoleBLL();
                 roleBLL.Create(new Role(-1, txtName.Text, cbRole.Text, false));
                 MessageBox.Show("Thêm thành công", "Thông báo", MessageBoxButtons.OK);
+                refresh();
             }
             catch (AppException ex)
             {
@@ -115,7 +116,9 @@ namespace CuaHangBanThucAn.GUI.AccountManager
                     RoleBLL roleBLL = new RoleBLL();
                     roleBLL.Update(new Role(int.Parse(txtDID.Text), txtDName.Text, cbDRole.Text, false));
                     MessageBox.Show("Thay đổi thành công", "Thông báo", MessageBoxButtons.OK);
+                    refresh();
                 }
+
             }
             catch (AppException ex)
             {
@@ -165,6 +168,7 @@ namespace CuaHangBanThucAn.GUI.AccountManager
                     RoleBLL roleBLL = new RoleBLL();
                     roleBLL.Delete(txtDID.Text.Length);
                     MessageBox.Show("Xoá thành công", "Thông báo", MessageBoxButtons.OK);
+                    refresh();
                 }
               
             }

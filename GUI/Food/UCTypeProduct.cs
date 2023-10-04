@@ -58,6 +58,7 @@ namespace CuaHangBanThucAn.GUI.Food
                 TypeProductBLL typeProductBLL = new TypeProductBLL();
                 typeProductBLL.Create(new TypeProduct(-1, txtName.Text, false));
                 MessageBox.Show("Thêm thành công", "Thông báo", MessageBoxButtons.OK);
+                refresh();
             }
             catch (AppException ex)
             {
@@ -140,6 +141,7 @@ namespace CuaHangBanThucAn.GUI.Food
                     TypeProductBLL typeProductBLL = new TypeProductBLL();
                     typeProductBLL.Update(new TypeProduct(int.Parse(txtDID.Text), txtDName.Text, false));
                     MessageBox.Show("Thay đổi thành công", "Thông báo", MessageBoxButtons.OK);
+                    refresh();
                 }
               
             }
@@ -163,6 +165,7 @@ namespace CuaHangBanThucAn.GUI.Food
                     TypeProductBLL typeProductBLL = new TypeProductBLL();
                     typeProductBLL.Delete(int.Parse(txtDID.Text));
                     MessageBox.Show("Xoá thành công", "Thông báo", MessageBoxButtons.OK);
+                    refresh();
                 }
 
             }

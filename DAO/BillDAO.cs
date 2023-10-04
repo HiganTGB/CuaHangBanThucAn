@@ -60,7 +60,7 @@ namespace CuaHangBanThucAn.DAO
             string query = string.Format("SELECT b.id,b.total,b.pay,b.change,b.account_id,b.date From Bill b join account a on b.account_id=a.id where a.name like '%{0}%' ",keyword);
             if (DateTime.TryParseExact(keyword,dateformat, null, DateTimeStyles.None, out DateTime date))
             {
-                query = String.Format("SELECT * FROM Bill where CAST(date AS date) like '%{0}%'", date.ToString("yyyy-MM-dd"));
+                query = String.Format("SELECT * FROM Bill where CAST(date AS date) = '{0}'", date.ToString("yyyy-MM-dd"));
             }
             if (int.TryParse(keyword, out int id))
             {

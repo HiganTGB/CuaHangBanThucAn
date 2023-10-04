@@ -153,6 +153,7 @@ namespace CuaHangBanThucAn.GUI.AccountManager
                 AccountBLL accountBLL = new AccountBLL();
                 accountBLL.Create(account);
                 MessageBox.Show("Thêm thành công", "Thông báo", MessageBoxButtons.OK);
+                refresh();
             }
             catch (AppException ex)
             {
@@ -190,8 +191,10 @@ namespace CuaHangBanThucAn.GUI.AccountManager
                     Account account = new Account(int.Parse(txtDID.Text), txtDName.Text, txtDEmail.Text, "", (Role)cbDType.SelectedItem, false);
                     AccountBLL accountBLL = new AccountBLL();
                     accountBLL.Update(account);
+                    MessageBox.Show("Thay đổi thành công", "Thông báo", MessageBoxButtons.OK);
+                    refresh();
                 }
-                MessageBox.Show("Thay đổi thành công", "Thông báo", MessageBoxButtons.OK);
+               
             }
             catch (AppException ex)
             {
@@ -216,8 +219,9 @@ namespace CuaHangBanThucAn.GUI.AccountManager
                 {
                     AccountBLL accountBLL = new AccountBLL();
                     accountBLL.Delete(int.Parse(txtDID.Text));
+                    MessageBox.Show("Xoá thành công", "Thông báo", MessageBoxButtons.OK);
+                    refresh();
                 }
-                MessageBox.Show("Xoá thành công", "Thông báo", MessageBoxButtons.OK);
             }
             catch (AppException ex)
             {
