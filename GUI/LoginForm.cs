@@ -55,6 +55,10 @@ namespace CuaHangBanThucAn.GUI
             {
                 txtPassword.Focus();
             }
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                login();
+            }
 
         }
 
@@ -64,6 +68,10 @@ namespace CuaHangBanThucAn.GUI
             {
                 txtEmail.Focus();
             }
+            if(e.KeyChar == (char)Keys.Enter)
+            {
+                login();
+            }    
 
         }
 
