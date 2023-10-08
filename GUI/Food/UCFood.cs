@@ -134,7 +134,7 @@ namespace CuaHangBanThucAn.GUI.Food
         }
         private string calctxtLastPrice(string price, string discount)
         {
-            if (!Valid.isPercent(discount))
+            if (!Valid.isPercent(discount)||(!Valid.isMoney(discount)))
             {
                 return string.Empty;
             }
