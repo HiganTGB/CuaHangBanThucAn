@@ -145,6 +145,7 @@ namespace CuaHangBanThucAn.GUI.Food
         }
         private void txtPrice_TextChanged(object sender, EventArgs e)
         {
+            if(txtPrice.Text.Length == 0) { return; }
                 txtLastPrice.Text = calctxtLastPrice(txtPrice.Text, txtDiscount.Text);
         }
 
