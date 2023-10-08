@@ -136,9 +136,14 @@ namespace CuaHangBanThucAn.GUI.Sale
         {
             try
             {
+               
                 if (txtID.Text.Length == 0)
                 {
                     throw new AppException(1, "Vui lòng chọn thực đơn");
+                }
+                if (txtQuantity.Value > txtQuantity.Maximum)
+                {
+                    throw new AppException(1, "Số lượng vượt quá số lượng hiện có");
                 }
                 if (txtQuantity.Value == 0)
                 {
@@ -177,6 +182,10 @@ namespace CuaHangBanThucAn.GUI.Sale
         {
             try
             {
+                if(txtPay.Text.Length == 0)
+                {
+                    throw new AppException(3, "Khách chưa trả tiền");
+                }    
                 if (bill.billDetails.Count == 0)
                 {
                     throw new AppException(3, "Hoá đơn trống");
@@ -198,6 +207,7 @@ namespace CuaHangBanThucAn.GUI.Sale
                 show(bill);
                 search("");
                 txtPay.Text ="";
+                MessageBox.Show("Lưu thành công", "Thông báo", MessageBoxButtons.OK);
             }
             catch (AppException ex)
             {
@@ -257,6 +267,9 @@ namespace CuaHangBanThucAn.GUI.Sale
 
         private void txtPay_TextChanged(object sender, EventArgs e)
         {
+
+            if (txtPay.Text.Contains(',') || txtPay.Text.Contains('.'))
+                txtPay.Text = string.Empty;
             if (Valid.isMoney(txtPay.Text))
             {
                 sellBLL.addPayBill(bill, long.Parse(txtPay.Text));
