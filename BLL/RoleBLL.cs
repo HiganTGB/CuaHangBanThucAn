@@ -71,7 +71,7 @@ namespace CuaHangBanThucAn.BLL
             if(old.Equals(entity)) {
                 throw new AppException(3, "Dữ liệu không thay đổi");
             }
-            Update(entity);
+            RoleDAO.Update(entity);
         }
     }
 }

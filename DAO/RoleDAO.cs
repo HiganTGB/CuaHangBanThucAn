@@ -37,7 +37,7 @@ namespace CuaHangBanThucAn.DAO
 
         public Role Read(int id)
         {
-            string query = string.Format("SELECT * FROM Role where deleted = 0 and id = {0}", id.ToString());
+            string query = string.Format("SELECT * FROM Role where deleted = 0 and id = {0}", id);
             DataTable dataTable = DataProvider.ExecuteQuery(query);
             if (dataTable.Rows.Count==0)
             {
@@ -74,7 +74,7 @@ namespace CuaHangBanThucAn.DAO
 
         public void Update(Role entity)
         {
-            string query = string.Format("update role set name = N'{0}',permission = '{1}'where id = {0}", entity.name, entity.permission, entity.id);
+            string query = string.Format("update role set name = N'{0}',permission = '{1}'where id = {2}", entity.name, entity.permission, entity.id);
             int result = DataProvider.ExecuteNonQuery(query);
             if (result == 0)
             {
