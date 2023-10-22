@@ -16,8 +16,6 @@ namespace CuaHangBanThucAn.BLL
 
         public List<Revenue> GetRevenue(DateTime start,DateTime end)
         {
-            try
-            {
                 List<Revenue> revenueDTOs = new List<Revenue>();
                 Revenue revenuetemp = new Revenue();
                 if (start.Date > end.Date)//Thòi gian lỗi
@@ -26,8 +24,7 @@ namespace CuaHangBanThucAn.BLL
                 }
                 if (start.Date == end.Date)//Hai thời gian bằng
                 {
-                    revenuetemp = revenueDAO.getRevenue(end);
-                    revenuetemp.dateid = end.Date;
+                    revenuetemp = revenueDAO.getRevenue(start);
                     revenueDTOs.Add(revenuetemp);
                     return revenueDTOs;
                 }
@@ -53,10 +50,7 @@ namespace CuaHangBanThucAn.BLL
                     y = y.AddDays(1);
                 }
                 return revenueDTOs;
-            }catch (AppException ex)
-            {
-                throw ex;
-            }
         }
     }
 }
+
