@@ -1,11 +1,15 @@
-﻿using System;
+﻿using CuaHangBanThucAn.LIB;
+using CuaHangBanThucAn.LIB.Error;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlTypes;
 using System.Linq;
+using System.Security.AccessControl;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace CuaHangBanThucAn.DTO
@@ -74,6 +78,30 @@ namespace CuaHangBanThucAn.DTO
                    discount == product.discount &&
                    stock == product.stock &&
                    deleted == product.deleted;
+        }
+        public void check()
+        {
+            if(this.name == null||this.name.Trim().Length==0)
+            {
+                throw new AppException(1, "Tên không được để trống");
+            }
+            if(this.typeProduct.id==-1)
+            {
+                throw new AppException(1, "Loại sản phẩm không được để trống");
+
+            }   
+            if(this.price<0||this.price.ToString().Length==0||!Valid.isMoney(this.price.ToString()))
+            {
+                throw new AppException(1, "Giá tiền phải là kiểu số và phải lớn hơn bằng 0");
+            }    
+            if(this.stock<0||this.stock.ToString().Length==0||!Valid.isNumber(this.stock.ToString()))
+            {
+                throw new AppException(1, "Số lượng phải là kiểu số và lớn hơn bằng 0");
+            }
+            if(this.discount.ToString().Length==0|| this.discount.ToString().Length == 0||!Valid.isPercent(this.discount.ToString()))
+            {
+                throw new AppException(1, "Giảm giá phải là kiểu thập phân và lớn hơn bằng 0");
+            }    
         }
     }
 }

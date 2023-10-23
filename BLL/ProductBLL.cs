@@ -18,6 +18,7 @@ namespace CuaHangBanThucAn.BLL
         public ProductBLL() { }
          public Product Create(Product entity)
         {
+            entity.check();
             entity.typeProduct = TypeProductDAO.Read(entity.typeProduct.id);
             return ProductDAO.Create(entity);
         }
@@ -29,6 +30,7 @@ namespace CuaHangBanThucAn.BLL
 
         public void Update(Product entity)
         {
+            entity.check();
             entity.typeProduct = TypeProductDAO.Read(entity.typeProduct.id);
             Product old =ProductDAO.Read(entity.id);
             if(old.Equals(entity))

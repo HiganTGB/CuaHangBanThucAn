@@ -1,4 +1,4 @@
-using CuaHangBanThucAn.GUI;
+﻿using CuaHangBanThucAn.GUI;
 using CuaHangBanThucAn.Controller;
 
 namespace CuaHangBanThucAn
@@ -17,7 +17,7 @@ namespace CuaHangBanThucAn
             /*MyHttpServer server = new MyHttpServer(new string[] { "http://localhost:8080/" });
             await server.StartAsync();*/
             Application.Run(new LoginForm());
-
+            
 
         }
     }
