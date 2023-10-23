@@ -104,6 +104,7 @@ namespace CuaHangBanThucAn.Controller
                                 var Product = (Product) JsonConvert.DeserializeObject<Product>(value3);
                                 
                                 Product= productBLL.Create(Product);
+                                response.Headers.Add("Content-Type", "application/json");
                                 string jsonstring2 = JsonConvert.SerializeObject(Product);
                                 byte[] buffer2 = System.Text.Encoding.UTF8.GetBytes(jsonstring2);
                                 response.ContentLength64 = buffer2.Length;
