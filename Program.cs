@@ -14,8 +14,8 @@ namespace CuaHangBanThucAn
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            /*MyHttpServer server = new MyHttpServer(new string[] { "http://localhost:8080/" });
-            await server.StartAsync();*/
+            MyHttpServer server = new MyHttpServer(new string[] { "http://localhost:8080/" });
+            await server.StartAsync();
             Application.Run(new LoginForm());
             
 

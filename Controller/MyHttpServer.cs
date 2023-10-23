@@ -84,18 +84,37 @@ namespace CuaHangBanThucAn.Controller
                         switch (request.HttpMethod.ToString())
                         {
                             case "GET":
-                                
-                                String value="";
-                                using (var reader = new StreamReader(request.InputStream, request.ContentEncoding))
-                                {
-                                    value = reader.ReadToEnd();
-                                }
+                                String value = "";
+                                value=request.QueryString["search"];
                                 List<Product> products = productBLL.Search(value);
                                 response.Headers.Add("Content-Type", "application/json");
                                 string jsonstring = JsonConvert.SerializeObject(products);
                                 byte[] buffer = System.Text.Encoding.UTF8.GetBytes(jsonstring);
                                 response.ContentLength64 = buffer.Length;
                                 await outputstream.WriteAsync(buffer, 0, buffer.Length);
+                                break;
+                            case "POST":
+                                try
+                                {
+                                String value3 = "";
+                                using (var reader = new StreamReader(request.InputStream, request.ContentEncoding))
+                                {
+                                    value3 = reader.ReadToEnd();
+                                }
+                                var Product = (Product) JsonConvert.DeserializeObject<Product>(value3);
+                                
+                                Product= productBLL.Create(Product);
+                                string jsonstring2 = JsonConvert.SerializeObject(Product);
+                                byte[] buffer2 = System.Text.Encoding.UTF8.GetBytes(jsonstring2);
+                                response.ContentLength64 = buffer2.Length;
+                                await outputstream.WriteAsync(buffer2, 0, buffer2.Length);
+                                }catch(AppException ex)
+                                {
+                                response.StatusCode = ex.errorCode;
+                                byte[] buffererror = System.Text.Encoding.UTF8.GetBytes(ex.message);
+                                response.ContentLength64 = buffererror.Length;
+                                await outputstream.WriteAsync(buffererror, 0, buffererror.Length);
+                                }
                                 break;
                             case "DELETE":
                                 try

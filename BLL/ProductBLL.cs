@@ -25,7 +25,9 @@ namespace CuaHangBanThucAn.BLL
 
         public Product Read(int id)
         {
-            return ProductDAO.Read(id);
+            Product a=ProductDAO.Read(id);
+            a.typeProduct = TypeProductDAO.Read(a.typeProduct.id);
+            return a;
         }
 
         public void Update(Product entity)
