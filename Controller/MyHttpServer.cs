@@ -85,7 +85,7 @@ namespace CuaHangBanThucAn.Controller
                         {
                             case "GET":
                                 String value = "";
-                                value=request.QueryString["search"];
+                                value = request.QueryString["search"];
                                 List<Product> products = productBLL.Search(value);
                                 response.Headers.Add("Content-Type", "application/json");
                                 string jsonstring = JsonConvert.SerializeObject(products);
@@ -96,25 +96,26 @@ namespace CuaHangBanThucAn.Controller
                             case "POST":
                                 try
                                 {
-                                String value3 = "";
-                                using (var reader = new StreamReader(request.InputStream, request.ContentEncoding))
-                                {
-                                    value3 = reader.ReadToEnd();
+                                    String value3 = "";
+                                    using (var reader = new StreamReader(request.InputStream, request.ContentEncoding))
+                                    {
+                                        value3 = reader.ReadToEnd();
+                                    }
+                                    var Product = (Product)JsonConvert.DeserializeObject<Product>(value3);
+
+                                    Product = productBLL.Create(Product);
+                                    response.Headers.Add("Content-Type", "application/json");
+                                    string jsonstring2 = JsonConvert.SerializeObject(Product);
+                                    byte[] buffer2 = System.Text.Encoding.UTF8.GetBytes(jsonstring2);
+                                    response.ContentLength64 = buffer2.Length;
+                                    await outputstream.WriteAsync(buffer2, 0, buffer2.Length);
                                 }
-                                var Product = (Product) JsonConvert.DeserializeObject<Product>(value3);
-                                
-                                Product= productBLL.Create(Product);
-                                response.Headers.Add("Content-Type", "application/json");
-                                string jsonstring2 = JsonConvert.SerializeObject(Product);
-                                byte[] buffer2 = System.Text.Encoding.UTF8.GetBytes(jsonstring2);
-                                response.ContentLength64 = buffer2.Length;
-                                await outputstream.WriteAsync(buffer2, 0, buffer2.Length);
-                                }catch(AppException ex)
+                                catch (AppException ex)
                                 {
-                                response.StatusCode = ex.errorCode;
-                                byte[] buffererror = System.Text.Encoding.UTF8.GetBytes(ex.message);
-                                response.ContentLength64 = buffererror.Length;
-                                await outputstream.WriteAsync(buffererror, 0, buffererror.Length);
+                                    response.StatusCode = 200;
+                                    byte[] buffererror = System.Text.Encoding.UTF8.GetBytes(ex.message);
+                                    response.ContentLength64 = buffererror.Length;
+                                    await outputstream.WriteAsync(buffererror, 0, buffererror.Length);
                                 }
                                 break;
                             case "DELETE":
@@ -134,7 +135,8 @@ namespace CuaHangBanThucAn.Controller
                                         response.ContentLength64 = buffer2.Length;
                                         await outputstream.WriteAsync(buffer2, 0, buffer2.Length);
                                     }
-                                }catch(AppException ex)
+                                }
+                                catch (AppException ex)
                                 {
                                     response.StatusCode = ex.errorCode;
                                     byte[] buffererror = System.Text.Encoding.UTF8.GetBytes(ex.message);
@@ -234,50 +236,51 @@ namespace CuaHangBanThucAn.Controller
         }
 
         // Tạo nội dung HTML trả về cho Client (HTML chứa thông tin về Request)
-        public string GenerateHTML(HttpListenerRequest request)
-        {
-            string format = @"<!DOCTYPE html>
-                            <html lang=""en""> 
-                                <head>
-                                    <meta charset=""UTF-8"">
-                                    {0}
-                                 </head> 
-                                <body>
-                                    {1}
-                                </body> 
-                            </html>";
-            string head = "<title>Test WebServer</title>";
-            var body = new StringBuilder();
-            body.Append("<h1>Request Info</h1>");
-            body.Append("<h2>Request Header:</h2>");
+        /*   public string GenerateHTML(HttpListenerRequest request)
+           {
+               string format = @"<!DOCTYPE html>
+                               <html lang=""en""> 
+                                   <head>
+                                       <meta charset=""UTF-8"">
+                                       {0}
+                                    </head> 
+                                   <body>
+                                       {1}
+                                   </body> 
+                               </html>";
+               string head = "<title>Test WebServer</title>";
+               var body = new StringBuilder();
+               body.Append("<h1>Request Info</h1>");
+               body.Append("<h2>Request Header:</h2>");
 
-            // Header infomation
-            var headers = from key in request.Headers.AllKeys
-                          select $"<div>{key} : {string.Join(",", request.Headers.GetValues(key))}</div>";
-            body.Append(string.Join("", headers));
+               // Header infomation
+               var headers = from key in request.Headers.AllKeys
+                             select $"<div>{key} : {string.Join(",", request.Headers.GetValues(key))}</div>";
+               body.Append(string.Join("", headers));
 
-            //Extract request properties
-            body.Append("<h2>Request properties:</h2>");
-            var properties = request.GetType().GetProperties();
-            foreach (var property in properties)
-            {
-                var name_pro = property.Name;
-                string value_pro;
-                try
-                {
-                    value_pro = property.GetValue(request).ToString();
-                }
-                catch (Exception e)
-                {
-                    value_pro = e.Message;
-                }
-                body.Append($"<div>{name_pro} : {value_pro}</div>");
+               //Extract request properties
+               body.Append("<h2>Request properties:</h2>");
+               var properties = request.GetType().GetProperties();
+               foreach (var property in properties)
+               {
+                   var name_pro = property.Name;
+                   string value_pro;
+                   try
+                   {
+                       value_pro = property.GetValue(request).ToString();
+                   }
+                   catch (Exception e)
+                   {
+                       value_pro = e.Message;
+                   }
+                   body.Append($"<div>{name_pro} : {value_pro}</div>");
 
-            };
-            string html = string.Format(format, head, body.ToString());
-            return html;
-        }
+               };
+               string html = string.Format(format, head, body.ToString());
+               return html;
+           }
 
 
+       }*/
     }
 }
