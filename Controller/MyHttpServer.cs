@@ -122,10 +122,7 @@ namespace CuaHangBanThucAn.Controller
                                 try
                                 {
                                     String value2 = "";
-                                    using (var reader = new StreamReader(request.InputStream, request.ContentEncoding))
-                                    {
-                                        value2 = reader.ReadToEnd();
-                                    }
+                                    value2 = request.QueryString["dID"];
                                     if (int.TryParse(value2, out int value3))
                                     {
                                         Product product = new Product();
@@ -134,7 +131,10 @@ namespace CuaHangBanThucAn.Controller
                                         byte[] buffer2 = System.Text.Encoding.UTF8.GetBytes("Xoá thành công");
                                         response.ContentLength64 = buffer2.Length;
                                         await outputstream.WriteAsync(buffer2, 0, buffer2.Length);
-                                    }
+                                    }else
+                                    {
+                                        throw new AppException(1, "Không tìm thấy sản phẩm");
+                                    }    
                                 }
                                 catch (AppException ex)
                                 {
@@ -144,7 +144,32 @@ namespace CuaHangBanThucAn.Controller
                                     await outputstream.WriteAsync(buffererror, 0, buffererror.Length);
                                 }
                                 break;
+                            case "PUT":
+                                try
+                                {
+                                    String value3 = "";
+                                    using (var reader = new StreamReader(request.InputStream, request.ContentEncoding))
+                                    {
+                                        value3 = reader.ReadToEnd();
+                                    }
+                                    var Product = (Product)JsonConvert.DeserializeObject<Product>(value3);
 
+                                    productBLL.Update(Product);
+                                    Product = productBLL.Read(Product.id);
+                                    response.Headers.Add("Content-Type", "application/json");
+                                    string jsonstring2 = JsonConvert.SerializeObject(Product);
+                                    byte[] buffer2 = System.Text.Encoding.UTF8.GetBytes(jsonstring2);
+                                    response.ContentLength64 = buffer2.Length;
+                                    await outputstream.WriteAsync(buffer2, 0, buffer2.Length);
+                                }
+                                catch (AppException ex)
+                                {
+                                    response.StatusCode = 200;
+                                    byte[] buffererror = System.Text.Encoding.UTF8.GetBytes(ex.message);
+                                    response.ContentLength64 = buffererror.Length;
+                                    await outputstream.WriteAsync(buffererror, 0, buffererror.Length);
+                                }
+                                break;
 
 
                         }

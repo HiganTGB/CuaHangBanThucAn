@@ -46,7 +46,7 @@ namespace CuaHangBanThucAn.BLL
             {
                 throw new AppException(5, "Chưa thanh toán đầy đủ hoá đơn");
             }    
-            if(bill.billDetails.Count==0)
+            if(bill.billDetails.Count<=0)
             {
                 throw new AppException(4, "Hoá đơn trống");
             }
