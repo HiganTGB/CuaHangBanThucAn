@@ -31,6 +31,12 @@
             lvList = new DataGridView();
             lvDetail = new DataGridView();
             groupBox1 = new GroupBox();
+            label6 = new Label();
+            label5 = new Label();
+            label4 = new Label();
+            label3 = new Label();
+            label2 = new Label();
+            label1 = new Label();
             txtDate = new TextBox();
             txtName = new TextBox();
             txtID = new TextBox();
@@ -41,12 +47,6 @@
             groupBox2 = new GroupBox();
             btnRefresh = new Button();
             btnSearch = new Button();
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
-            label5 = new Label();
-            label6 = new Label();
             ((System.ComponentModel.ISupportInitialize)lvList).BeginInit();
             ((System.ComponentModel.ISupportInitialize)lvDetail).BeginInit();
             groupBox1.SuspendLayout();
@@ -101,6 +101,60 @@
             groupBox1.TabStop = false;
             groupBox1.Text = "Chi tiết hoá đơn";
             // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(308, 654);
+            label6.Name = "label6";
+            label6.Size = new Size(87, 20);
+            label6.TabIndex = 13;
+            label6.Text = "Tiền thối lại";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(276, 601);
+            label5.Name = "label5";
+            label5.Size = new Size(119, 20);
+            label5.TabIndex = 12;
+            label5.Text = "Số tiền khách trả";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(293, 552);
+            label4.Name = "label4";
+            label4.Size = new Size(102, 20);
+            label4.TabIndex = 11;
+            label4.Text = "Tổng hoá đơn";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(45, 95);
+            label3.Name = "label3";
+            label3.Size = new Size(69, 20);
+            label3.TabIndex = 10;
+            label3.Text = "Ngày lập";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(208, 37);
+            label2.Name = "label2";
+            label2.Size = new Size(75, 20);
+            label2.TabIndex = 9;
+            label2.Text = "Nhân viên";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(6, 39);
+            label1.Name = "label1";
+            label1.Size = new Size(89, 20);
+            label1.TabIndex = 8;
+            label1.Text = "Mã hoá đơn";
+            // 
             // txtDate
             // 
             txtDate.Location = new Point(132, 93);
@@ -119,6 +173,7 @@
             // 
             // txtID
             // 
+            txtID.Enabled = false;
             txtID.Location = new Point(112, 36);
             txtID.Name = "txtID";
             txtID.Size = new Size(38, 27);
@@ -187,60 +242,6 @@
             btnSearch.Text = "Tìm kiếm";
             btnSearch.UseVisualStyleBackColor = true;
             btnSearch.Click += btnSearch_Click;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(6, 39);
-            label1.Name = "label1";
-            label1.Size = new Size(89, 20);
-            label1.TabIndex = 8;
-            label1.Text = "Mã hoá đơn";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(208, 37);
-            label2.Name = "label2";
-            label2.Size = new Size(75, 20);
-            label2.TabIndex = 9;
-            label2.Text = "Nhân viên";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(45, 95);
-            label3.Name = "label3";
-            label3.Size = new Size(69, 20);
-            label3.TabIndex = 10;
-            label3.Text = "Ngày lập";
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Location = new Point(293, 552);
-            label4.Name = "label4";
-            label4.Size = new Size(102, 20);
-            label4.TabIndex = 11;
-            label4.Text = "Tổng hoá đơn";
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Location = new Point(276, 601);
-            label5.Name = "label5";
-            label5.Size = new Size(119, 20);
-            label5.TabIndex = 12;
-            label5.Text = "Số tiền khách trả";
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Location = new Point(308, 654);
-            label6.Name = "label6";
-            label6.Size = new Size(87, 20);
-            label6.TabIndex = 13;
-            label6.Text = "Tiền thối lại";
             // 
             // UCBill
             // 

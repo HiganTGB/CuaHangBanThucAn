@@ -70,12 +70,18 @@ namespace CuaHangBanThucAn.BLL
             bill.addPay(pay);
             return bill;
         }
-        public void printBill(Bill bill) {
+        public void printBill(Bill bill)
+        {
+
             SaveFileDialog saveFileDialog = new SaveFileDialog();
             saveFileDialog.Filter = "PDF Files (*.pdf)|*.pdf";
             saveFileDialog.Title = "Save PDF File";
             saveFileDialog.FileName = String.Format("bill_{0}", bill.id);
-            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            if (saveFileDialog.ShowDialog() != DialogResult.OK)
+            {
+                return;
+            }
+            else
             {
                 // Lấy đường dẫn và tên file
                 string fileName = saveFileDialog.FileName;
@@ -93,6 +99,6 @@ namespace CuaHangBanThucAn.BLL
                 writer.Flush();
                 document.Close();
             }
+            }
         }
     }
-}

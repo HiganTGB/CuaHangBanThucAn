@@ -26,8 +26,8 @@ namespace CuaHangBanThucAn.DTO
             this.name = (string)dataRow["name"];
             this.email = (string)dataRow["email"];
             this.password = (string)dataRow["password"];
-            this.role.id = (int)dataRow["role_id"];
             this.deleted = (bool)dataRow["deleted"];
+            this.role.id = (int)dataRow["role_id"];
             /*
              id int identity not null primary key,
             name nvarchar(max) not null,

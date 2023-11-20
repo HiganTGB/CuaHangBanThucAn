@@ -146,3 +146,4 @@ D:\Testing\CuaHangBanThucAn\bin\Debug\net6.0-windows\System.Net.Http.Formatting.
 D:\Testing\CuaHangBanThucAn\bin\Debug\net6.0-windows\System.Web.Http.dll
 D:\Testing\CuaHangBanThucAn\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
 D:\Testing\CuaHangBanThucAn\bin\Debug\net6.0-windows\Newtonsoft.Json.Bson.dll
+D:\Testing\CuaHangBanThucAn\obj\Debug\net6.0-windows\CuaHangBanThucAn.sourcelink.json

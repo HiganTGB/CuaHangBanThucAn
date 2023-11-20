@@ -67,11 +67,11 @@ namespace CuaHangBanThucAn.DAO
             string query = string.Empty;
             if(isnumber)
             {
-                query = string.Format("select a.id,a.name,a.email,a.password,a.deleted from Account a join Role r on a.role_id=r.id where a.deleted = 0 and (a.name like N'%{0}%' or email like '%{0}%' or r.name like N'%{0}%' or permission like '{0}' or a.id = {1}) ", keyword,id);
+                query = string.Format("select a.id,a.name,a.email,a.password,a.deleted,a.role_id from Account a join Role r on a.role_id=r.id where a.deleted = 0 and (a.name like N'%{0}%' or email like '%{0}%' or r.name like N'%{0}%' or a.id = {1}) ", keyword,id);
             }
             else
             {
-                query = string.Format("select a.id,a.name,a.email,a.password,a.deleted from Account a join Role r on a.role_id=r.id where a.deleted = 0 and (a.name like N'%{0}%' or email like '%{0}%' or r.name like N'%{0}%' or permission like '{0}') ", keyword);
+                query = string.Format("select a.id,a.name,a.email,a.password,a.deleted,a.role_id from Account a join Role r on a.role_id=r.id where a.deleted = 0 and (a.name like N'%{0}%' or email like '%{0}%' or r.name like N'%{0}%') ", keyword);
             }    
             DataTable data = DataProvider.ExecuteQuery(query);
             List < Account > list = new List<Account>();
@@ -99,7 +99,7 @@ namespace CuaHangBanThucAn.DAO
         public void Update(Account entity)
         {
             CheckEmail(entity.email, entity.id);
-            string query = string.Format("update account set name = N'{0}',email='{1}',password='{2}' where id = {3}", entity.name,entity.email,entity.password,entity.id);
+            string query = string.Format("update account set name = N'{0}',email='{1}',password='{2}',role_id='{4}' where id = {3}", entity.name,entity.email,entity.password,entity.id,entity.role.id);
             int result = DataProvider.ExecuteNonQuery(query);
             if (result == 0)
             {
