@@ -19,10 +19,13 @@ namespace CuaHangBanThucAn.GUI.AccountManager
         public UCRole()
         {
             InitializeComponent();
+            cbDRole.Items.Add("");
             cbDRole.Items.Add("ADMIN");
             cbDRole.Items.Add("STAFF");
+            cbRole.Items.Add("");
             cbRole.Items.Add("ADMIN");
             cbRole.Items.Add("STAFF");
+            
             refresh();
             lvType.ReadOnly = true;
         }

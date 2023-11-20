@@ -2,6 +2,7 @@
 using CuaHangBanThucAn.DTO;
 using CuaHangBanThucAn.LIB;
 using CuaHangBanThucAn.LIB.Error;
+using System.Collections;
 using System.Data;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
@@ -126,8 +127,11 @@ namespace CuaHangBanThucAn.GUI.Food
             cbDType.DisplayMember = "name";
             cbDType.ValueMember = "id";
             TypeProductBLL typeProductBLL = new TypeProductBLL();
-            cbType.DataSource = typeProductBLL.SearchAll();
-            cbDType.DataSource = typeProductBLL.SearchAll();
+            List<TypeProduct> typeProducts=new List<TypeProduct>();
+            typeProducts.Add(new TypeProduct(0,"",false));
+            typeProducts.AddRange(typeProductBLL.SearchAll());
+            cbType.DataSource = typeProducts;
+            cbDType.DataSource = typeProducts;
             ProductBLL productBLL = new ProductBLL();
             showlist(productBLL.SearchAll());
 

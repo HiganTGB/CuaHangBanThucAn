@@ -25,6 +25,8 @@ namespace CuaHangBanThucAn.GUI.AccountManager
             lvAccount.ReadOnly = true;
             lbDError.Visible=false;
             lbError.Visible=false;
+            txtDRole.ReadOnly = true;
+            txtRole.ReadOnly = true;
             refresh();
         }
 
@@ -69,8 +71,11 @@ namespace CuaHangBanThucAn.GUI.AccountManager
             cbDType.DisplayMember = "name";
             cbDType.ValueMember = "id";
             RoleBLL typeProductBLL = new RoleBLL();
-            cbType.DataSource = typeProductBLL.SearchAll();
-            cbDType.DataSource = typeProductBLL.SearchAll();
+            List<Role> roles = new List<Role>();
+            roles.Add(new Role(-1, "", "None", false));
+            roles.AddRange(typeProductBLL.SearchAll());
+            cbType.DataSource = roles;
+            cbDType.DataSource = roles;
             AccountBLL accountBLL = new AccountBLL();
             showlist(accountBLL.SearchAll());
         }
